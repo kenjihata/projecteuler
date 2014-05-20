@@ -4,6 +4,5 @@ def sumMultiples(n):
 		if x%3 == 0 or x%5 == 0:
 			sum += x 
 	return sum
-
-print sumMultiples(1000)			
+		
 
