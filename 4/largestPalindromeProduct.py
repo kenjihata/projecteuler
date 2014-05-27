@@ -14,7 +14,3 @@ def isPalindrome(n):
 		reverse = reverse*10 + LSD
 		n = (n-LSD)/10
 	return copy == reverse
-
-print largestPalindromeProduct()
-
-
