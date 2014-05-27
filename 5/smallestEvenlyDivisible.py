@@ -16,4 +16,3 @@ def primeFactorSieve(n):
 			prime_factor_list.append(num)
 	return prime_factor_list
 
-print smallestEvenlyDivisible(20)

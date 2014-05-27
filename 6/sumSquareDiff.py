@@ -1,0 +1,2 @@
+def sumSquareDiff(n):
+	
