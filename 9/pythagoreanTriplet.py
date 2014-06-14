@@ -7,4 +7,5 @@ def findTripletProduct(desiredSum):
 			c = math.sqrt(a*a + b*b)
 			if (a+b+c == desiredSum):
 				return a*b*c
+
 print findTripletProduct(int(sys.argv[1]))
