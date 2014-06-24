@@ -1,5 +1,7 @@
 import sys
 
+# finds the largest product of 4 numbers diagonally in a matrix
+# could be either \ diagonal or / diagonal
 def findLargestFourDiag(mat):
 	largestProd = 0
 	for i in xrange(0, len(mat)-4):
@@ -12,6 +14,7 @@ def findLargestFourDiag(mat):
 			if prod > largestProd: largestProd = prod
 	return largestProd
 
+# finds the largest product of 4 numbers vertically in a matrix
 def findLargestFourVert(mat):
 	largestProd = 0
 	for i in xrange(0, len(mat)-4):
@@ -20,6 +23,7 @@ def findLargestFourVert(mat):
 			if prod > largestProd: largestProd = prod
 	return largestProd
 
+# finds the largest product of 4 numbers horizontally in a matrix
 def findLargestFourHoriz(mat):
 	largestProd = 0
 	for i in xrange(0, len(mat)):
@@ -28,6 +32,7 @@ def findLargestFourHoriz(mat):
 			if prod > largestProd: largestProd = prod
 	return largestProd
 
+# finds the largest product of 4 numbers in a line in a matrix
 def findLargestFourAdjProd(mat):
 	if len(mat) == 0:
 		return None

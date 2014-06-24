@@ -1,8 +1,12 @@
 import math
 
+# finds the nth prime using prime sieve
 def findNthPrime(n):
+	if n<1: return None
 	logn = math.log(n)
+	# upper bound on the nth prime number
 	upperBound = int(math.ceil(n*(logn + math.log(logn) - 0.9484)))
+	# keeps track of potential prime candidates
 	primelist = [True]*upperBound
 	primelist[0] = False
 	primelist[1] = False

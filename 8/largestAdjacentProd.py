@@ -1,5 +1,6 @@
 import sys
 
+# finds the product of the digits of a string of numbers
 def adjacentProduct(string):
 	prod = 1
 	for i in xrange(0,len(string)):

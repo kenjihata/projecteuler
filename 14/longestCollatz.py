@@ -1,6 +1,8 @@
 import sys
 
-def collatzLength(num, arr):
+# finds the collatz length of a given whole number. 
+# arguments are the whole number and a list, by reference, where we keep track of potential longest candidates.
+def collatzLength(num, longestList):
 	if num < 1:
 		return None
 	length = 0
@@ -10,13 +12,15 @@ def collatzLength(num, arr):
 		else:
 			num /= 2
 		if num >= 1 and num <= len(arr):
-			arr[num-1] = False
+			longestList[num-1] = False
 		length += 1
 	return length
 
+# finds the longest collatz sequence of whole numbers up to upperBound
 def longestCollatzSequence(upperBound):
 	if upperBound < 1:
 		return None
+	# keep track of which number is potentially the longest (true if so)
 	longestTracker = [True] * upperBound
 	longestLength = 0
 	longestNum = 1

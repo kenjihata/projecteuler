@@ -1,6 +1,8 @@
 import sys
 
+# using a fast prime sieve, generate a list of primes under a whol e number
 def generatePrimesUnder(upperBound):
+	if upperBound < 2: return None
 	primelist = []
 	isPrime = [True]*upperBound
 	isPrime[0] = False
