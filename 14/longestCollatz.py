@@ -11,7 +11,7 @@ def collatzLength(num, longestList):
 			num = 3*num + 1
 		else:
 			num /= 2
-		if num >= 1 and num <= len(arr):
+		if num >= 1 and num <= len(longestList):
 			longestList[num-1] = False
 		length += 1
 	return length

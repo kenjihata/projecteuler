@@ -7,4 +7,4 @@ def latticePathCount(gridWidth, gridLength):
 	if gridLength < 0 or gridWidth < 0: return None
 	return math.factorial(gridLength+gridWidth) / (math.factorial(gridLength) * math.factorial(gridWidth))
 
-print latticePathCount(int(sys.argv[1]))
+print latticePathCount(int(sys.argv[1]),int(sys.argv[1]))
