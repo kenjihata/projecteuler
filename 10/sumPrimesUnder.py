@@ -1,6 +1,6 @@
 import sys
 
-# using a fast prime sieve, generate a list of primes under a whol e number
+# using a fast prime sieve, generate a list of primes under a whole number
 def generatePrimesUnder(upperBound):
 	if upperBound < 2: return None
 	primelist = []
