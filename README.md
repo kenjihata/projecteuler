@@ -16,3 +16,5 @@ Solving Project Euler problems: projecteuler.net
 - For greatest common factor, use the Euler algorithm instead of brute force
 
 - Problem 34: Find a smarter approach than brute-force. Most likely, you can use the fact that if the greatest digit's factorial is far smaller or greater than the number, you can immediately consider it false; this way, you don't have to check all possible numbers from 10 to 9!*7.
+
+- Problem 43: Finish the non-brute force method. Can do by hand.
